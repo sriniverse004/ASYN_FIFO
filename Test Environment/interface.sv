@@ -1,6 +1,5 @@
-interface inter (input bit wr_clk, rd_clk);
+interface inter (input bit wr_clk, rd_clk, rst, wr_en, rd_en);
 
-logic rst, wr_en, rd_en;
 logic [7:0] wdata;
 logic [7:0] rdata;
 logic full, empty;
@@ -22,6 +21,6 @@ clocking cb2 @(posedge rd_clk);
     output rd_en;
 endclocking
 
-modport mp1 (clocking cb1, clocking cb2, input wr_clk, rd_clk, output rst);
+modport mp1 (clocking cb1, clocking cb2, input wr_clk, rd_clk, rst, wr_en, rd_en);
 
 endinterface
