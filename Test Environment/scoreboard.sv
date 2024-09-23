@@ -20,7 +20,7 @@ class scoreboard;
             trans = new();
             rec2sb.get(trans);
             
-            if(trans.rd_en)begin
+            if(vif.rd_en)begin
                  if(trans.rdata == fifo_mem[rd_pntr])begin
                      rd_pntr++;
                      $display("Successful");
