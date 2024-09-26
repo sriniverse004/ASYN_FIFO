@@ -23,7 +23,7 @@ initial begin
   
 end
 
-intf intf(wr_clk, rd_clk, rst, wr_en, rd_en);
+intf intf1(wr_clk, rd_clk, rst, wr_en, rd_en);
 
 asyn_fifo f1(.wr_clk(intf.wr_clk), .rd_clk(intf.rd_clk), .rst(intf.rst), .wr_en(intf.wr_en), .rd_en(intf.rd_en), .wdata(intf.wdata), .rdata(intf.rdata), .empty(intf.empty), .full(intf.full), .fifo_counter(intf.fifo_counter));
 
