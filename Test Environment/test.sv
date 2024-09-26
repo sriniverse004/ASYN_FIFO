@@ -6,7 +6,7 @@ environment env;
 
 initial begin
         env = new(intf);
-    env.start();
+        env.start();
 end
 
 endprogram
