@@ -10,7 +10,7 @@ function new (virtual intf vif);
 endfunction
     
 initial begin
-    env = new(virtual intf vif);
+    env = new(vif);
     env.start();
 end
 
