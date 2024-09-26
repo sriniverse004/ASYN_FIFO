@@ -1,4 +1,3 @@
-`include "asyn_fifo.v"
 `include "interface.sv"
 `include "test.sv"
 
