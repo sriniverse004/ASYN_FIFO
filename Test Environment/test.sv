@@ -1,6 +1,6 @@
 `include "environment.sv"
 
-program test(inter.mp1 intf);
+program test(intf.mp1 intf);
 
 environment env;
 
