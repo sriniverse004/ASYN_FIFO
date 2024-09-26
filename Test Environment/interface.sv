@@ -10,7 +10,6 @@ clocking cb1 @(posedge wr_clk);
     input full, empty; 
     input fifo_counter;
     output wdata;
-    output wr_en;
 endclocking
 
 clocking cb2 @(posedge rd_clk);
@@ -18,7 +17,7 @@ clocking cb2 @(posedge rd_clk);
     input full, empty; 
     input fifo_counter;
     output rdata;
-    output rd_en;
+
 endclocking
 
 modport mp1 (clocking cb1, clocking cb2, input wr_clk, rd_clk, rst, wr_en, rd_en);
