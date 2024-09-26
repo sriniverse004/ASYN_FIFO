@@ -1,5 +1,3 @@
-`include "transactor.sv"
-
 class driver;
 
     transactor trans;
