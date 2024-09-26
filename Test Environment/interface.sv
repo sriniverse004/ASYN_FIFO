@@ -1,4 +1,4 @@
-interface inter (input bit wr_clk, rd_clk, rst, wr_en, rd_en);
+interface intf (input bit wr_clk, rd_clk, rst, wr_en, rd_en);
 
 logic [7:0] wdata;
 logic [7:0] rdata;
