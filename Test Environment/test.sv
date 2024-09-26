@@ -2,15 +2,10 @@
 
 program test(inter.mp1 intf);
 
-virtual intf vif;
 environment env;
 
-function new (virtual intf vif);
-        this.vif = vif;
-endfunction
-    
 initial begin
-    env = new(vif);
+        env = new(intf);
     env.start();
 end
 
