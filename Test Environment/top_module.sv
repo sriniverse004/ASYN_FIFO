@@ -24,9 +24,9 @@ end
 
 intf intf1(wr_clk, rd_clk, rst, wr_en, rd_en);
 
-asyn_fifo f1(.wr_clk(intf.wr_clk), .rd_clk(intf.rd_clk), .rst(intf.rst), .wr_en(intf.wr_en), .rd_en(intf.rd_en), .wdata(intf.wdata), .rdata(intf.rdata), .empty(intf.empty), .full(intf.full), .fifo_counter(intf.fifo_counter));
+  asyn_fifo f1(.wr_clk(intf1.wr_clk), .rd_clk(intf1.rd_clk), .rst(intf1.rst), .wr_en(intf1.wr_en), .rd_en(intf1.rd_en), .wdata(intf1.wdata), .rdata(intf1.rdata), .empty(intf1.empty), .full(intf1.full), .fifo_counter(intf1.fifo_counter));
 
-test tb(intf);
+  test tb(intf1);
 
 initial begin
     $dumpfile("fifo_test.vcd"); 
