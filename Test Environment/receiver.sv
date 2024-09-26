@@ -1,5 +1,3 @@
-`include "transactor.sv"
-
 class receiver;
 
     transactor trans;
